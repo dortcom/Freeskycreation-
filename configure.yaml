@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: your-username/your-repo-name
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "sections"
+    label: "Site Sections"
+    files:
+      - name: "welcome"
+        label: "Welcome Section"
+        file: "content/welcome.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+
+      - name: "footer"
+        label: "Footer Text"
+        file: "content/footer.md"
+        fields:
+          - { label: "Footer Message", name: "message", widget: "text" }
